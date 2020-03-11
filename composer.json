@@ -41,9 +41,10 @@
             "database/seeds",
             "database/factories"
         ],"files": [
-            "App/Helper/Helpers_function.php"
+            "app/Helper/Helpers_function.php"
         ]
     },
+
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"

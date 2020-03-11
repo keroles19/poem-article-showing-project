@@ -12,7 +12,7 @@ class Comment extends Model
     protected $fillable = array('comment', 'name', 'email', 'comentable_id', 'comentable_type','status');
 
     public function getTitleAttribute(){
-        $title = $this->comentable()->pluck('title')[0];
+        $title = $this->comentable->title;
         return $title;
     }
 

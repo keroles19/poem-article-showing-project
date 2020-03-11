@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
 //        $this->app->bind('path.public',function(){return base_path('public_html'); });
         //
        // $videos = Video::where('created_at','<',Carbon::now()->toDateTime())->take(6)->get()();
-        $ads = Ad::latest()->take(6)->get();
+        $ads = Ad::take(6)->orderby('created_at','asc')->get();
         $poems =Poem::latest()->take(6)->get();
         $articles = Article::latest()->take(6)->get();
         $videos = Video::latest()->take(6)->get();

@@ -27,10 +27,10 @@
                     @foreach($records as $record)
                         <tr>
                             <td>{{$loop->iteration}}</td>
-                            <td>{{Str::limit($record->title, 30)}}</td>
+                            <td>{{\Str::limit($record->title, 30)}}</td>
                             <td>{{$record->name}}</td>
                             <td>{{$record->email}}</td>
-                            <td> {{Str::limit($record->comment,240)}}
+                            <td> {{\Str::limit($record->comment,240)}}
                             </td>
                             <td>  <form action="{{url('admin/comment/status/'.$record->id)}}" method="POST">
                                     @csrf

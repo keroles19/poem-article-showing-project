@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- start carousel -->
-<section class=" slider-boot ">
+<section class=" slider-boot " dir="rtl">
     <div class="wow bounceInLeft  bd-example" data-wow-duration="3s">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 
@@ -19,7 +19,7 @@
                 @foreach($ads as $ad)
                 <div class="carousel-item @if($loop->iteration == 1) active @endif">
                     <img src="{{asset('images/'.$ad->image)}}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption  d-md-block">
                         <h5>{{$ad->title}}</h5>
                         <p>{{$ad->body}}</p>
                     </div>

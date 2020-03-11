@@ -1,7 +1,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/36054945/76452554-00766180-63da-11ea-8f5f-8827f227feef.png" width="400"></p>
 
 
-## Sofra Shop
+## poem-article-app
 
 A Project which showing articles and poems for someone, any one can commented at any article or poem.  with  admin dashboard for controlling site
 by Laravel  - MySql - Ajax - Adminlte - Bootstrap - Javascript
